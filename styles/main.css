@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000000;
+  border-radius: 11.0208px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.contenedor {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: #bdbbbb;
+  text-decoration: none;
+  margin-right: 40px;
+  font-size: 16px;
+}
+
+header nav a:hover,
+header nav a.activo {
+  color: #ffffff;
+}
+
+header input[type="text"] {
+  padding: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  border: none;
+}
+
+header .contenedor-buscar button {
+  float: right;
+  padding: 8.5px 10px;
+  cursor: pointer;
+  border: none;
+  background: #ececec;
+}
+
+header .contenedor-buscar button:hover {
+  background: #bdbcbc;
+}
+
+/* ---- ---- ---- Película principal ---- ---- ---- */
+
+.pelicula-principal {
+  font-size: 16px;
+  min-height: 40.62em;
+  color: #ffffff;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url(../images/bg-matrix-1.jpg);
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 3.12em;
+  display: flex;
+  align-items: flex-end;
+}
+
+.pelicula-principal .contenedor {
+  margin: 0 auto;
+  margin-bottom: 6.25em;
+}
+
+.pelicula-principal .titulo-principal {
+  font-weight: 700;
+  font-size: 3.12em;
+  margin-bottom: 0.9em;
+}
+
+.pelicula-principal .descripcion {
+  font-weight: normal;
+  font-size: 1.125em;
+  line-height: 1.75em;
+  max-width: 50%;
+  margin-bottom: 1.25em;
+}
+
+.pelicula-principal .etiquetas {
+  display: flex;
+  list-style-position: inside;
+  margin-bottom: 0.937em;
+}
+
+.pelicula-principal .etiquetas li {
+  font-size: 0.875em;
+  margin-right: 0.625em;
+}
+
+.pelicula-principal .boton {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 0.18em;
+  padding: 0.93em 1.87em;
+  color: #000000;
+  margin-right: 1.125em;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  font-size: 1.125em;
+}
+
+.pelicula-principal .boton:hover {
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+}
+
+.pelicula-principal .boton i {
+  margin-right: 1em;
+}
+
+/* ---- ---- ---- Grilla de películas ---- ---- ---- */
+
+h2 {
+  width: 90%;
+  margin: auto;
+}
+
+.contenedor-peliculas {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 100%);
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.contenedor-peliculas section {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  margin: 1.25em 0;
+}
+
+.contenedor-peliculas section .pelicula img {
+  width: 234px;
+  height: 355px;
+}
+
+.contenedor-peliculas section .pelicula {
+  padding: 0 0.125em;
+  transition: 250ms all;
+}
+
+.contenedor-peliculas section .pelicula:hover {
+  margin: 0 0.625em;
+  transform: scale(1.05);
+}
+
+.contenedor-peliculas section .slider {
+  position: absolute;
+  color: #fff;
+  text-decoration: none;
+  font-size: 6em;
+  background: #000;
+  width: 80px;
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
+}
+
+.contenedor-peliculas section .slider:nth-of-type(1) {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    -90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.contenedor-peliculas section .slider:nth-of-type(2) {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+/* ---- ---- ---- Media queries ---- ---- ---- */
+
+@media screen and (max-width: 800px) {
+  header .logotipo {
+    margin-bottom: 15px;
+  }
+
+  header .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pelicula-principal {
+    font-size: 14px;
+  }
+
+  .pelicula-principal .descripcion {
+    max-width: 100%;
+  }
+}

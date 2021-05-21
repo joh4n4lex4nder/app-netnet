@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Aplicación Netnet</title>
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <a href="index.html"
+          ><img
+            class="logotipo"
+            src="./images/logo-netnet.png"
+            alt="Logotipo Netnet"
+        /></a>
+        <nav>
+          <a href="#" class="activo">Series</a>
+          <a href="#">Películas</a>
+          <a href="#">Mi lista</a>
+        </nav>
+        <div class="contenedor-buscar">
+          <form>
+            <input type="text" placeholder="Búsqueda..." name="buscar" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="pelicula-principal">
+        <div class="contenedor">
+          <h3 class="titulo-principal">Matrix</h3>
+          <p class="descripcion">
+            Un hacker informático aprende de misteriosos rebeldes la verdadera
+            naturaleza de su realidad y su papel en la guerra contra sus
+            controladores.
+          </p>
+          <ul class="etiquetas">
+            <li>Surrealista</li>
+            <li>Distópico</li>
+            <li>Hábil</li>
+            <li>Siniestro</li>
+            <li>Emocionante</li>
+          </ul>
+          <button role="button" class="boton">
+            <i class="fas fa-play"></i>Reproducir
+          </button>
+          <button role="button" class="boton">
+            <i class="fas fa-info-circle"></i>Más información
+          </button>
+        </div>
+      </div>
+      <h2>Estrenos</h2>
+      <div class="contenedor-peliculas">
+        <section id="seccion-estrenos-1">
+          <a class="slider" href="#seccion-estrenos-2">‹</a>
+          <div class="pelicula">
+            <a href="#"
+              ><img src="images/cover-1.jpg" alt="Película Matrix"
+            /></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"
+              ><img src="images/cover-2.jpg" alt="Película Bob Esponja"
+            /></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"
+              ><img src="images/cover-3.jpg" alt="Película Spider-man"
+            /></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"
+              ><img src="images/cover-4.jpg" alt="Película Dragón"
+            /></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"
+              ><img src="images/cover-5.jpg" alt="Película Crónicas Navidad"
+            /></a>
+          </div>
+          <a class="slider" href="#seccion-estrenos-2">›</a>
+        </section>
+        <section id="seccion-estrenos-2">
+          <a class="slider" href="#seccion-estrenos-1">‹</a>
+          <div class="pelicula">
+            <a href="#"
+              ><img src="images/cover-6.jpg" alt="Película John Wick"
+            /></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"
+              ><img src="images/cover-7.jpg" alt="Película Matrix"
+            /></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"
+              ><img src="images/cover-8.jpg" alt="Película Bob Esponja"
+            /></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"
+              ><img src="images/cover-9.jpg" alt="Película Spider-man"
+            /></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"
+              ><img src="images/cover-10.jpg" alt="Película Dragón"
+            /></a>
+          </div>
+          <a class="slider" href="#seccion-estrenos-1">›</a>
+        </section>
+      </div>
+      <h2>Populares en Netnet</h2>
+      <div class="contenedor-peliculas">
+        <section id="seccion-populares-1">
+          <a class="slider" href="#seccion-populares-2">‹</a>
+          <div class="pelicula">
+            <a href="#"
+              ><img src="images/cover-1.jpg" alt="Película Matrix"
+            /></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"
+              ><img src="images/cover-2.jpg" alt="Película Bob Esponja"
+            /></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"
+              ><img src="images/cover-3.jpg" alt="Película Spider-man"
+            /></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"
+              ><img src="images/cover-4.jpg" alt="Película Dragón"
+            /></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"
+              ><img src="images/cover-5.jpg" alt="Película Crónicas Navidad"
+            /></a>
+          </div>
+          <a class="slider" href="#seccion-populares-2">›</a>
+        </section>
+        <section id="seccion-populares-2">
+          <a class="slider" href="#seccion-populares-1">‹</a>
+          <div class="pelicula">
+            <a href="#"
+              ><img src="images/cover-6.jpg" alt="Película John Wick"
+            /></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"
+              ><img src="images/cover-7.jpg" alt="Película Matrix"
+            /></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"
+              ><img src="images/cover-8.jpg" alt="Película Bob Esponja"
+            /></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"
+              ><img src="images/cover-9.jpg" alt="Película Spider-man"
+            /></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"
+              ><img src="images/cover-10.jpg" alt="Película Dragón"
+            /></a>
+          </div>
+          <a class="slider" href="#seccion-populares-1">›</a>
+        </section>
+      </div>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/68a8eae582.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/scripts/index.js"></script>
+  </body>
+</html>
